@@ -1,0 +1,7 @@
+*/env*
+*/instance*
+*/Procfile
+*.md
+mysql
+*.pyc
+*/*/*.pyc
