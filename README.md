@@ -59,7 +59,7 @@ There are four options to execute this script:
     docker network create proj
   fi
   ```
-    First of all, we check if the network exists, if it doesn't exist we create it with the command above.
+  First of all, we check if the network exists, if it doesn't exist we create it with the command above.
 
   1.2 Creating and running containers
   ```
@@ -77,9 +77,13 @@ There are four options to execute this script:
   docker run -d --name haproxy --net=proj user/haproxy
   ```
   Here we build and run three containers, first of all, we build it from its respectives Dockerfiles. After that, we run each container and add them to the network we created in the previous step. But, running the database is a little bit different because it is necesary to create something called "volume", it is like a mirroring between a local folder and a folder in the container. We did this to ensure persistence so we can reuse /home/user/mysql folder in other containers (but not simultaneity).
+
 2. Delete
   This will delete the network that we created, the containers and the images
+
 3. Start
   This option is to start all the containers that have been created with our program such as db, projMan1, projMan2 and haproxy.
+
 4. Stop
   This option will stop the containers that we started in the "start" stage.
+
